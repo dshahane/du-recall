@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=61.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "du-recalle"
+version = "0.1.0"
+description = "A configuration-driven data processing service using Prefect, Dask, and FastAPI."
+authors = [
+    { name = "User", email = "user@example.com" }
+]
+license = { text = "MIT" }
+readme = "README.md"
+requires-python = ">=3.9,<3.12"
+
+dependencies = [
+    # Core Orchestration and Compute
+    "prefect",
+    "dask",
+    "distributed",
+    "pandas",
+    # Web Data Ingestion
+    "trustfall",
+    #"trustfall-core",
+    # API and Configuration
+    "fastapi",
+    "uvicorn[standard]",
+    "tomli",
+    "pydantic",
+    # Storage and RDF
+    "rdflib",
+    "rocksdict>=0.3.0", # Note: Requires RocksDB C library installed on the system
+
+    # LLM Pipeline (Haystack)
+    "farm-haystack[inference]", # Adding inference tools for LLM use
+
+    # === FIX: FORCE A COMPATIBLE VERSION FOR PYTHON 3.13 ===
+    "asyncpg>=0.30.0",
+    # =======================================================
+
+    # Extensibility/Testing
+    "typing-extensions",
+]

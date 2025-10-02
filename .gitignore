@@ -1,0 +1,70 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+*.os
+
+# Distribution / packaging
+.Python
+build/
+dist/
+wheels/
+*.egg-info/
+htmlcov/
+.tox/
+
+# Installer logs
+pip-log.txt
+pip-delete-this-file.txt
+
+# Unit test / coverage reports
+.coverage
+.coverage.*
+.hypothesis/
+.pytest_cache/
+
+# Debugging and development
+.ipynb_checkpoints
+.idea/
+.vscode/
+
+# Virtual environment files
+# See https://github.com/github/gitignore/blob/main/Python.gitignore for more options
+venv/
+env/
+/venv
+/env
+*.venv
+.venv
+/local
+/bin
+/include
+/lib
+/lib64
+/share
+!**/lib/python*/site-packages
+
+# Editor files and common development tools
+# Logs and data
+*.log
+data/
+tmp/
+
+# IPython Notebook files (often large)
+.ipynb_checkpoints
+
+# Specific to Python data science/analytics projects
+# Anaconda environments
+.anaconda/
+.conda/
+.jupyter/
+.matplotlib/
+
+# IDE/Tool specific files (e.g., PyCharm, VS Code)
+*.iml
+.DS_Store
+uv.lock
+.idea/

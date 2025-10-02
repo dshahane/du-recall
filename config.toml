@@ -1,0 +1,14 @@
+[[pipeline]]
+endpoint = "csv_file_ingest"
+title = "CSV Product Data Ingestion"
+source_type = "file" # Accepts a file upload
+
+[[pipeline]]
+endpoint = "web_report_ingest"
+title = "E-commerce Web Report Ingestion"
+source_type = "url" # Accepts a URL in the JSON body
+
+[[pipeline]]
+endpoint = "excel_monthly_data"
+title = "Monthly Sales Spreadsheet"
+source_type = "file" # Another file upload example
