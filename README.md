@@ -34,7 +34,7 @@ pip install uv
 Set up the project structure and install all necessary dependencies using the `pyproject.toml` file.
 
 #### Clone the repository
-```git clone <repo-url>```
+```git clone git@github.com:dshahane/du-recall.git```
 
 
 #### Sync dependencies defined in pyproject.toml
